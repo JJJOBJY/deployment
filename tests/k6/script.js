@@ -12,9 +12,9 @@ const errorRate = new Rate("errors");
 // ---------------------------------------------------------------------------
 export const options = {
   stages: [
-    { duration: "30s", target: 10 },   // Ramp-up   : 0 → 10 VUs
-    { duration: "1m",  target: 50 },   // Load      : hold 50 VUs
-    { duration: "30s", target: 100 },  // Spike     : 50 → 100 VUs
+    { duration: "30s", target: 20 },   // Ramp-up   : 0 → 20 VUs
+    { duration: "2m",  target: 100 },  // Load      : hold 100 VUs
+    { duration: "30s", target: 200 },  // Spike     : 100 → 200 VUs
     { duration: "30s", target: 0 },    // Ramp-down : back to 0
   ],
   thresholds: {
